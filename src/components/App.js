@@ -23,7 +23,7 @@ class App extends React.Component {
     }
 
     fetch(endpoint)
-      .then(res => res.json())
+      .then(resp => resp.json())
       .then(pets => this.setState({pets}))
   }
 
